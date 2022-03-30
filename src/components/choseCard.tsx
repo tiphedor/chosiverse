@@ -12,28 +12,28 @@ const ChoseCard = ({
   zipDownloadLink,
 }: Chose) => {
   return (
-    <div className={"choseCardContainer"}>
-      <div className={"coverImageContainer"}>
-        <img src={coverUrl} />
+    <div className={"chose-card-container"}>
+      <div className={"cover-image-container"}>
+        <img src={coverUrl} alt={"Chose"} />
       </div>
 
       <div>
-        <div className={"cardDetailsContainer"}>
+        <div className={"card-details-container"}>
           <h1>{name}</h1>
 
-          <div className={"authorName"}>by {author}</div>
+          <div className={"author-name"}>by {author}</div>
 
-          <div className={"shortDescription"}>{shortDescription}</div>
+          <div className={"short-description"}>{shortDescription}</div>
         </div>
 
-        <div className={"bottomPanel"}>
-          <div className={"bottomPanelButton"}>
+        <div className={"bottom-panel"}>
+          <div className={"bottom-panel-button"}>
             <FontAwesomeIcon icon="heart" />
 
             {likesCount}
           </div>
           <a
-            className={"bottomPanelButton"}
+            className={"bottom-panel-button"}
             href={zipDownloadLink}
             target="_blank"
             rel="noreferrer"
